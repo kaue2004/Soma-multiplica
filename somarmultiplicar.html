@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function multValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = s1*s2;
+        alert(s3);
+    }
+    function somarValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = parseInt(s1) + parseInt(s2);
+        alert(s3);
+    }
+</script>
+<body>
+    
+
+        <h1>Valor 1:</h1>
+        <input id="txt1" type="text"/>
+        <h1>Valor 2: </h1>
+        <input id="txt2" type="text"/>
+        <br><br><br>
+        <button id="mult" onclick="multValores()">Multiplicar</button>
+        <button id="somar" onclick="somarValores()">Somar</button>
+    
+</body>
+</html>
