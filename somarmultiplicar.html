@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <script type="text/javascript">
@@ -19,17 +21,31 @@
         var s3 = parseInt(s1) + parseInt(s2);
         alert(s3);
     }
+    function qddValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = s1*s1;
+        alert(s3);
+    }
+    function qdlValores(){
+        var s1 = document.getElementById("txt1").value;
+        var s2 = document.getElementById("txt2").value;
+        var s3 = s1*s1/2;
+        alert(s3);
+    }
 </script>
 <body>
     
-
-        <h1>Valor 1:</h1>
-        <input id="txt1" type="text"/>
-        <h1>Valor 2: </h1>
-        <input id="txt2" type="text"/>
+        <div class="card">
+        <h1>Valor 1:</h1><br>
+        <input id="txt1" type="text"/><br>
+        <h1 >Valor 2: </h1><br>
+        <input id="txt2" type="text"/><br>
         <br><br><br>
-        <button id="mult" onclick="multValores()">Multiplicar</button>
-        <button id="somar" onclick="somarValores()">Somar</button>
-    
+        <button id="bt" onclick="multValores()">Multiplicar</button><br><br>
+        <button id="bt" onclick="somarValores()">Somar</button><br><br>
+        <button id="bt" onclick="qddValores()">Quadrado</button><br><br>
+        <button id="bt" onclick="qdlValores()">Quadrilatero</button>
+        </div>
 </body>
 </html>
